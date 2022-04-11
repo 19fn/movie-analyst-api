@@ -13,6 +13,6 @@ COPY . .
 
 EXPOSE 3000
 
-RUN npm install
+RUN npm install && apk add curl
 
 CMD [ "npm","start" ]
